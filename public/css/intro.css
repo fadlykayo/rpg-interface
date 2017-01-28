@@ -1,0 +1,210 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    font-family: 'Ek Mukta', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none; /* Non-prefixed version, currently
+                                 not supported by any browser */
+}
+
+#intro {
+    margin-top: -20px;
+    background: url("../assets/background-img/img-3.jpg");
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: block;
+    top: 25px;
+    width: 85%;
+    height: 65%;
+    margin: 0 auto;
+}
+
+/*Luckiest Guy*/
+
+.container h1 {
+    font-family: 'Bubblegum Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 46px;
+    color: white;
+    margin: 20px;
+    margin-bottom: 25px;
+}
+
+.container h2 {
+    font-family: 'Bubblegum Sans', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+}
+
+.character-box {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.image-box {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0px;
+    float: left;
+}
+
+@media (min-width:1460px){
+  .image-box img {
+      margin: 0px 12%;
+      opacity: 0.8;
+      transition: 0.6s;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1460px){
+  .image-box img {
+      margin: 0px 11%;
+      opacity: 0.8;
+      transition: 0.6s;
+  }
+}
+
+@media (min-width:1022px) and (max-width:1200px){
+  .image-box img {
+      margin: 0px 10%;
+      opacity: 0.8;
+      transition: 0.6s;
+  }
+}
+
+@media (max-width:1022px){
+  .image-box img {
+      margin: 0px 8%;
+      opacity: 0.8;
+      transition: 0.6s;
+  }
+}
+
+.character-img-box {
+  text-align: center;
+  height: 70%;
+  width: 31%;
+  float: left;
+  margin: 1%;
+  background-color: rgba(90,90,90,0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.character-img-box:hover {
+  background-color: rgba(90,90,90,0.6)
+}
+
+.character-img-box:hover img {
+  opacity: 1;
+}
+
+.class-title {
+  display: inline-block;
+  margin-left: 1%;
+  width: 32%;
+  height: 12%;
+}
+
+.class-title p {
+  margin: 0;
+  font-size: 26px;
+  font-family: "shojumaru";
+  color: white;
+}
+
+.description-box {
+  width: 100%;
+  height: 16%;
+  margin: 5px 0px;
+  float: left;
+  border-radius: 10px;
+    background: rgba(255, 0, 0, 0.5); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.8)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.8)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.8)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.8)); /* Standard syntax */
+}
+
+.character-description-box {
+  display: inline-block;
+  margin-left: 1%;
+  width: 32%;
+  height: 90%;
+  text-align: left;
+}
+
+.character-description-box p {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  font-size: 26px;
+  margin: 0;
+  font-family: "Bubblegum Sans";
+  color: white;
+}
+
+.start-button {
+  position: absolute;
+  bottom: -240px;
+  left: 20%;
+  height: 15%;
+  width: 60%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 50px;
+  font-size: 32px;
+  font-family: "Bubblegum Sans";
+  border-radius: 10px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  cursor: pointer;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+  float: right;
+}
+
+#input_name{
+  position: absolute;
+  top: 22%;
+  left: 32%;
+  height: 40%;
+  width: 32%;
+  font-size: 26px;
+  font-family: "Bubblegum Sans";
+  text-align: center;
+}
+
+label{
+  position: absolute;
+  top: -80%;
+  left: 40%;
+  font-size: 36px;
+  color: white;
+  font-family: "Bubblegum Sans"
+}
